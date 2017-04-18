@@ -14,3 +14,17 @@ JARs Used
 * itextpdf-5.4.1
 * json-200080701
 * hamcrest-all-1.3
+
+# Using Existing PDF/Binary File (Images etc)
+If you want to just upload an existing PDF, rather than creating a new one, you can use the following code in place of line 59 in DocUpload.java
+  
+  // Convert the following
+  builder.addBinaryBody("Body", getNewDocStream(), ContentType.APPLICATION_OCTET_STREAM, "AnyTestName");
+  
+  // To
+  File existingFile = new File("localPathToExistingFile");
+  builder.addPart("Body", new FileBody(existingFile));
+  
+  // Also, fix the imports to include
+  import java.io.File;
+  import org.apache.http.entity.mime.content.FileBody;
