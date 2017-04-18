@@ -1,4 +1,4 @@
-# PDFUsingREST
+# PDFUsingREST (Attaches the PDF as an attachment in Salesforce, NOT as a File)
 Create and upload a PDF file to Salesforce from Java 7 &amp; Java 8
 
 This is an implementation of a Java solution to upload a pdf/binary to Salesforce using the standard REST endpoint.
@@ -34,3 +34,5 @@ If you want to just upload an existing PDF, rather than creating a new one, you 
   import java.io.File;
   import org.apache.http.entity.mime.content.FileBody;
   ```
+
+> Coming soon: Solution to upload content under File related list of SObject in Salesforce
