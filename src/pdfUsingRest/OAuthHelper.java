@@ -21,17 +21,17 @@ import org.json.JSONTokener;
  *
  */
 public class OAuthHelper {
-	
-	private static final String USERNAME     = "yourUserName@org.com";
-	private static final String PASSWORD     = "yourPasswordWithSecurityTokenAddedAtTheEnd";
-	private static final String LOGINURL     = "https://test.salesforce.com";
-	private static final String GRANTSERVICE = "/services/oauth2/token?grant_type=password";
-	
-	/* Set up a canvas app in Salesforce that allows OAuth, and populate the following fields */
-	private static final String CLIENTID     = "canvasApp'sClientId";
-	private static final String CLIENTSECRET = "canvasApp'sClientSecret";
     
-	private static String REST_ENDPOINT = "/services/data" ;
+    private static final String USERNAME     = "yourUserName@org.com";
+    private static final String PASSWORD     = "yourPasswordWithSecurityTokenAddedAtTheEnd";
+    private static final String LOGINURL     = "https://test.salesforce.com";
+    private static final String GRANTSERVICE = "/services/oauth2/token?grant_type=password";
+	
+    /* Set up a canvas app in Salesforce that allows OAuth, and populate the following fields */
+    private static final String CLIENTID     = "canvasApp'sClientId";
+    private static final String CLIENTSECRET = "canvasApp'sClientSecret";
+    
+    private static String REST_ENDPOINT = "/services/data";
     private static String API_VERSION = "/v32.0" ;
     
     /**
